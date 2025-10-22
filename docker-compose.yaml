@@ -36,6 +36,7 @@ services:
     volumes:
       - ./back/src:/app/src
       - ./back/package.json:/app/package.json
+      - ./back/pnpm-lock.yaml:/app/pnpm-lock.yaml
       - ./back/tsconfig.json:/app/tsconfig.json
       - ./back/tsconfig.build.json:/app/tsconfig.build.json
       - ./back/nest-cli.json:/app/nest-cli.json
@@ -65,6 +66,7 @@ services:
       - ./front/hooks:/app/hooks
       - ./front/public:/app/public
       - ./front/package.json:/app/package.json
+      - ./front/pnpm-lock.yaml:/app/pnpm-lock.yaml
       - ./front/tsconfig.json:/app/tsconfig.json
       - ./front/next.config.ts:/app/next.config.ts
       - ./front/postcss.config.mjs:/app/postcss.config.mjs
